@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nabvar from './components/navbar';
 import injectContext from './store/appContext';
 import Home from './views/home';
+import Profile from './views/profile';
 import Login from './views/login';
 import NotFound from './views/notfound';
 
@@ -11,6 +12,7 @@ function App() {
             <Nabvar />
             <Switch>
                 <Route exact path="/login" component={Login} />
+                <Route exact path="/profile" component={Profile} />
                 <Route exact path="/" component={Home} />
                 <Route component={NotFound} />
             </Switch>

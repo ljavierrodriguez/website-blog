@@ -35,6 +35,13 @@ export default function Login(){
                   history.push('/')
                 }
               })
+        }else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: resp.msg,
+                footer: 'Please try again!'
+            })
         }
     }
 
